@@ -1,0 +1,10 @@
+# FutureAgent
+This project is mainly aimed at kicking the old e-commerce portrait model of "thousands of people, thousands of faces", which is increasingly disliked by everyone and is not accurate. In the future, through the interaction mode of intelligent agents, the platform's acquisition of user data will be blocked. The user's exclusive intelligent agent will analyze the user's habits and form a demand description that can be described to the platform. The platform intelligent agent will combine the demand and recommend relevant store intelligent agents. The user's exclusive intelligent agent will interact with the store intelligent agent to select specific products. This intelligent agent interaction mode is very in line with the future development trend of intelligent agents. The core advantages are:
+1. Data privacy protection: User data is stored locally, and only the "demand description" is exposed externally instead of the original data;
+2. Personalized accuracy: The exclusive intelligent agent based on the user's full-dimensional behavior is more in line with the individual than the platform's "thousands of people, thousands of faces" recommendation;
+3. Multi-agent collaboration: Through standardized interaction between intelligent agents, the platform barriers are broken, and cross-platform personalized services are achieved.
+   Next, we will implement a FUTUREAGENT project that can be published on GitHub, simulating the ordering interaction process of "User Agent ↔ Platform Agent ↔ Store Agent". The core logic is as follows:
+User Agent: Stores the user's core preferences (moderate price, less sweet, no sugar, less ice), and initiates an ordering request;
+Platform Agent: Receives the user's requirements and filters a list of stores that meet the basic conditions;
+Store Agent: Receives the user's preferences and filters matching dishes/drinks from the store's products;
+Interaction process: User Agent → Platform Agent (filter stores) → Store Agent (filter products) → Results returned to the user.
